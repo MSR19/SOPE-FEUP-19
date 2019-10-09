@@ -1,0 +1,48 @@
+E - 03025 - [ 62 bytes] 03025 (0000, "password")             [   20 ms] CREATE   0002          4€ "password"
+R - 03025 - [ 12 bytes] 0000   CREATE           OK
+E - 03046 - [ 62 bytes] 03046 (0000, "password")             [   20 ms] CREATE   0002          4€ "password"
+R - 03046 - [ 12 bytes] 0000   CREATE    ID_IN_USE
+E - 03235 - [ 62 bytes] 03235 (0002, "password")             [ 2000 ms] BALANCE 
+R - 03235 - [ 12 bytes] 0002  BALANCE           OK          4€
+E - 03332 - [ 62 bytes] 03332 (0002, "password")             [ 2000 ms] CREATE   4000       2000€ "password"
+R - 03332 - [ 12 bytes] 0002   CREATE    OP_NALLOW
+E - 03354 - [ 62 bytes] 03354 (0000, "password")             [ 2000 ms] CREATE   4000       2000€ "password"
+R - 03354 - [ 12 bytes] 0000   CREATE           OK
+E - 03378 - [ 62 bytes] 03378 (4000, "password")             [ 2000 ms] BALANCE 
+R - 03378 - [ 12 bytes] 4000  BALANCE           OK       2000€
+E - 03409 - [ 62 bytes] 03409 (4000, "password")             [ 2000 ms] SHUTDOWN
+R - 03409 - [ 12 bytes] 4000 SHUTDOWN    OP_NALLOW 0
+E - 03448 - [ 62 bytes] 03448 (4000, "password")             [ 2000 ms] TRANSFER 0002        200€
+R - 03448 - [ 12 bytes] 4000 TRANSFER           OK       1800€
+E - 03468 - [ 62 bytes] 03468 (4000, "password")             [ 2000 ms] TRANSFER 0002        300€
+R - 03468 - [ 12 bytes] 4000 TRANSFER           OK       1500€
+E - 03493 - [ 62 bytes] 03493 (0003, "password")             [ 2000 ms] SHUTDOWN
+R - 03493 - [ 12 bytes] 0003 SHUTDOWN   LOGIN_FAIL 0
+E - 03517 - [ 62 bytes] 03517 (4000, "password")             [ 2000 ms] BALANCE 
+R - 03517 - [ 12 bytes] 4000  BALANCE           OK       1500€
+E - 03583 - [ 62 bytes] 03583 (0000, "password")             [ 2000 ms] SHUTDOWN
+R - 03583 - [ 12 bytes] 0000 SHUTDOWN           OK 1
+R - 03604 - [ 12 bytes] 4000  BALANCE     SRV_DOWN          0€
+E - 04115 - [ 62 bytes] 04115 (0000, "password")             [ 2000 ms] SHUTDOWN
+R - 04115 - [ 12 bytes] 0000 SHUTDOWN           OK 1
+R - 04141 - [ 12 bytes] 4000  BALANCE     SRV_DOWN          0€
+E - 04897 - [ 62 bytes] 04897 (4000, "password")             [ 2000 ms] BALANCE 
+R - 04897 - [ 12 bytes] 4000  BALANCE   LOGIN_FAIL          0€
+E - 05122 - [ 62 bytes] 05122 (4000, "password")             [ 2000 ms] BALANCE 
+R - 05122 - [ 12 bytes] 4000  BALANCE   LOGIN_FAIL          0€
+E - 05330 - [ 62 bytes] 05330 (4000, "password")             [ 2000 ms] BALANCE 
+R - 05330 - [ 12 bytes] 4000  BALANCE   LOGIN_FAIL          0€
+E - 05589 - [ 62 bytes] 05589 (4000, "password")             [ 2000 ms] BALANCE 
+R - 05589 - [ 12 bytes] 4000  BALANCE   LOGIN_FAIL          0€
+E - 05625 - [ 62 bytes] 05625 (4000, "password")             [ 2000 ms] BALANCE 
+R - 05625 - [ 12 bytes] 4000  BALANCE   LOGIN_FAIL          0€
+E - 05649 - [ 62 bytes] 05649 (0000, "password")             [ 2000 ms] SHUTDOWN
+R - 05649 - [ 12 bytes] 0000 SHUTDOWN           OK 1
+R - 05674 - [ 12 bytes] 0000 SHUTDOWN     SRV_DOWN 0
+E - 05873 - [ 62 bytes] 05873 (0000, "password")             [ 2000 ms] SHUTDOWN
+R - 05873 - [ 12 bytes] 0000 SHUTDOWN           OK 1
+E - 06045 - [ 62 bytes] 06045 (0000, "password")             [ 2000 ms] SHUTDOWN
+R - 06045 - [ 12 bytes] 0000 SHUTDOWN           OK 1
+R - 06070 - [ 12 bytes] 0000 SHUTDOWN     SRV_DOWN 0
+E - 06179 - [ 62 bytes] 06179 (0000, "password")             [ 2000 ms] SHUTDOWN
+R - 06179 - [ 12 bytes] 0000 SHUTDOWN           OK 1
